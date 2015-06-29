@@ -13,13 +13,13 @@ The Iot App is made up of 3 modules
 # Description of the files in this project
 1. PIRSensor_Arduino_MQTT_Bluemix.ino:
   This is the Arduino sketch which reads the PIR sensor output and publishes it to the IBM cloud IoT topic. 
-<u>Note</u>: You will need to provide appropriate values for mac address, ip address, device ID, device type, device-cloud connection password etc in the declaration section of this file for the sketch to work. 
+<b>Note</b>: You will need to provide appropriate values for mac address, ip address, device ID, device type, device-cloud connection password etc in the declaration section of this file for the sketch to work. 
 2. ArduinoPIRSensor_To_Android_Flow.json:
   This is the Bluemix Node-RED flow object which wires the Iot device and the Ardroid device running the app through push notification. 
-<u>Note</u>: After importing this file in node-RED flow editor, the application secret has to be manually updated in the IBM push node.
+<b>Note</b>: After importing this file in node-RED flow editor, the application secret has to be manually updated in the IBM push node.
 3. Rest of the files:
   These files form the Ardroid camera app which triggers the camera shutter upon receiving the push notification from Node-RED.
-<u>Note</u>:In assets/bluelist.properties file, appropriate mobile cloud related values need to supplied.
+<b>Note</b>:In assets/bluelist.properties file, appropriate mobile cloud related values need to supplied.
   
 # Development tools used 
 1. Eclipse IDE (ADT) / Android Studio
