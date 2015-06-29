@@ -2,7 +2,7 @@
 An android camera in combination with an Arduino PIR sensor wired together using IBM Bluemix platform. The camera activates the shutter whenever a motion is detected.
 
 # Why did I develop this app?
-The Iot app was primarily developed to capture photographs of birds (could be squirells, rodents etc !!) visiting the garden bird feeder. The Iot PIR sensor detects any motion when birds land on the feeder, sends a push notification to an android app to activate the phone's camera shutter and click an image of the bird(s). The photograph of the bird is stored in the same phone which syncs and uploads the photo to the cloud. We could however extend the use of this app in other ways such as a security camera.
+The Iot app was primarily developed to capture photographs of birds (could be squirrels, rodents etc !!) visiting the garden bird feeder. The Iot PIR sensor detects any motion when birds land on the feeder, sends a push notification to an android app to activate the phone's camera shutter and click an image of the bird(s). The photograph of the bird is stored in the same phone which syncs and uploads the photo to the cloud. We could however extend the use of this app in other ways such as a security camera.
 
 # What are the app modules?
 The Iot App is made up of 3 modules
