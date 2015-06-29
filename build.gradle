@@ -1,0 +1,76 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.2.3'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+
+apply plugin: 'android'
+
+dependencies {
+    // Play services jar
+    compile 'com.google.android.gms:play-services:+'
+    // IBM cloud jars
+    compile 'com.ibm.mobile.services:ibmdata:1.+'
+    compile 'com.ibm.mobile.services:ibmbluemix:1.+'
+    compile 'com.ibm.mobile.services:ibmfilesync:1.+'
+    compile 'com.ibm.mobile.services:ibmpush:1.+'
+    compile 'com.ibm.mobile.services:ibmcloudcode:1.+'
+    // Add another custom maven dependency here
+    // *and/or*
+    // Uncomment if you'd like to add any additional dependencies to your custom project by dropping them into the 'libs' directory
+    // compile fileTree(dir: 'libs', include: '*.jar')
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    sourceSets {
+        main {
+			// Need Android Manifest to build
+            manifest.srcFile 'AndroidManifest.xml'
+			// BlueList Java code
+            java.srcDirs = ['src']
+			// Your own code?
+            resources.srcDirs = ['src']
+			// More of your own code?
+            aidl.srcDirs = ['src']
+			// Even more of your own code?
+            renderscript.srcDirs = ['src']
+			
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+// The wrapper task allows the distribution of your software that can be built 
+// with a quick call of 'gradlew' without the need to install gradle.
+// NOTE: This can only be done if 'gradle wrapper' is called prior to distribution.
+// See more info on the gradle wrapper here--> http://www.gradle.org/docs/current/userguide/gradle_wrapper.html
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.10'
+}

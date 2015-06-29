@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MotionDetectAutoShutter</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Motion detect auto camera</string>
+    <string name="unregister">Unregister</string>
+    <string name="title_activity_rich_notification">RichNotification</string>
+
+</resources>
