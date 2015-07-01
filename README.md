@@ -34,4 +34,5 @@ The Iot App is made up of 3 modules
 
 # A look at the complete setup
 Detailed information on how the complete project was built can be found at the following link:
-<br/>Link To be updated
+<br/> Demo link: https://youtu.be/-ZQ4vnLqHYk
+<br/>Others links to be updated.
