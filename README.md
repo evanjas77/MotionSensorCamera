@@ -5,13 +5,17 @@ An android camera in combination with an Arduino PIR sensor wired together using
 The Iot app was primarily developed to capture photographs of birds (could be squirrels, rodents etc !!) visiting the garden bird feeder. The Iot PIR sensor detects any motion when birds land on the feeder, sends a push notification to an android app to activate the phone's camera shutter and click an image of the bird(s). The photograph of the bird is stored in the same phone which syncs and uploads the photo to the cloud. We could however extend the use of this app in other ways such as a security camera.
 
 # System context diagram
-![System context diagram](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/MotionSensorCamera.jpg)
+![System_context_diagram](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/MotionSensorCamera.jpg)
 
 # What are the app modules?
 The Iot App is made up of 3 modules
 <br/>1. A PIR Sensor connected to Arduino UNO interfaced with Ethernet/Wifi shield.
 <br/>2. The Bluemix cloud (InternetOfThings, Node-RED, Push, Mobile security services)
 <br/>3. An android app which activates the camera shutter and perform a click whenever the push notification is received.
+
+# PIR Sensor Arduino Sketch
+![ArduinoUNOSketch](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/ArduinoSketch.jpg)
+![ArduinoUNOSetup](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/ArduinoUNOSetup.jpg)
 
 # Description of the files in this project
 1. PIRSensor_Arduino_MQTT_Bluemix.ino:
