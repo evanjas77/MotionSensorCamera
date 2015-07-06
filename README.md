@@ -11,12 +11,14 @@ The Iot app was primarily developed to capture photographs of birds (could be sq
 The Iot App is made up of 3 modules
 <br/>1. A PIR Sensor connected to Arduino UNO interfaced with Ethernet/Wifi shield.
 <br/>2. The Bluemix cloud (InternetOfThings, Node-RED, Push, Mobile security services)
-![BluemixServices](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/BluemixServices.jpg)
 <br/>3. An android app which activates the camera shutter and perform a click whenever the push notification is received.
 
 # PIR Sensor Arduino Sketch
 ![ArduinoUNOSketch](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/ArduinoSketch.jpg)
-![ArduinoUNOSetup](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/ArduinoUNOSetup.jpg)
+![ArduinoUNO_Setup](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/ArduinoUNOSetup.jpg)
+
+# Bluemix services configured
+![BluemixServices](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/BluemixServices.jpg)
 
 # Description of the files in this project
 1. PIRSensor_Arduino_MQTT_Bluemix.ino:
