@@ -13,20 +13,12 @@ The Iot App is made up of 3 modules
 <br/>2. The Bluemix cloud (InternetOfThings, Node-RED, Push, Mobile security services)
 <br/>3. An android app which activates the camera shutter and perform a click whenever the push notification is received.
 
-# PIR Sensor Arduino Sketch
-![ArduinoUNOSketch](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/ArduinoSketch.jpg)
-![ArduinoUNO_Setup](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/ArduinoUNOSetup.jpg)
-
-# Bluemix services configured
-![BluemixServices](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/BluemixServices.jpg)
-
 # Description of the files in this project
 1. PIRSensor_Arduino_MQTT_Bluemix.ino:
   This is the Arduino sketch which reads the PIR sensor output and publishes it to the IBM cloud IoT topic. 
 <b>Note</b>: You will need to provide appropriate values for mac address, ip address, device ID, device type, device-cloud connection password etc in the declaration section of this file for the sketch to work. 
 2. ArduinoPIRSensor_To_Android_Flow.json:
-  This is the Bluemix Node-RED flow object which wires the Iot device and the Ardroid device running the app through push notification. Once imported into the flow editor, the flow and the incoming JSON is as shown in the image below:
-![NodeREDFlow](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/NodeREDFlow.jpg)
+  This is the Bluemix Node-RED flow object which wires the Iot device and the Ardroid device running the app through push notification. 
 <b>Note</b>: After importing this file in node-RED flow editor, the application secret has to be manually updated in the IBM push node.
 3. Rest of the files:
   These files form the Ardroid camera app which triggers the camera shutter upon receiving the push notification from Node-RED.
@@ -44,6 +36,13 @@ The Iot App is made up of 3 modules
 4. IBM Bluemix cloud platform (InternetOfThings, Node-RED, Push, Mobile security services)
 
 # A look at the complete setup
-Detailed information on how the complete project was built can be found at the following link:
+Detailed information on how the complete project was built can be found at the following links:
 <br/> Demo link: https://youtu.be/-ZQ4vnLqHYk
-<br/>Others links to be updated.
+### PIR Sensor Arduino Sketch
+![ArduinoUNOSketch](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/ArduinoSketch.jpg)
+![ArduinoUNO_Setup](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/ArduinoUNOSetup.jpg)
+### Bluemix services configured
+![BluemixServices](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/BluemixServices.jpg)
+###NodeRED flow
+![NodeREDFlow](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/NodeREDFlow.jpg)
+###Others links to be updated.
