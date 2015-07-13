@@ -13,6 +13,21 @@ The Iot App is made up of 3 modules
 <br/>2. The Bluemix cloud (InternetOfThings, Node-RED, Push, Mobile security services)
 <br/>3. An android app which activates the camera shutter and perform a click whenever the push notification is received.
 
+# Bill of materials
+|         Component         | Qty | Cost in Rs. |
+|---------------------------|-----|-------------|
+| Arduino UNO + Starter Kit | 1   |       1600  |
+|                      LED  | 1   |          0  |
+|          330 ohm resistor | 1   |          0  |
+|           Mini breadboard | 1   |          0  |
+|     PIR Sensor - HC-SR501 | 1   |        102  |
+|              Jumper Wires | 30  |        160  |
+|     Ethernet W5100 Shield | 1   |        699  |
+|Bluemix account free trial | 1   |          0  |
+|            Android device | 1   |             |
+|              Total        | 1   |       2560  |
+
+
 # Description of the files in this project
 1. PIRSensor_Arduino_MQTT_Bluemix.ino:
   This is the Arduino sketch which reads the PIR sensor output and publishes it to the IBM cloud IoT topic. 
