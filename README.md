@@ -52,7 +52,9 @@ The Iot App is made up of 3 modules
 
 # A look at the complete setup
 Detailed information on how the complete project was built can be found at the following links:
+<br/>
 <br/> Demo link: https://youtu.be/-ZQ4vnLqHYk
+<br/>
 <br/> Blog: https://www.ibm.com/developerworks/community/blogs/2ecbd84c-c0a3-4a39-a0cb-4f356d50cd83/entry/Build_a_motion_sensor_with_Arduino_Bluemix_Android?lang=en
 ### PIR Sensor Arduino Sketch
 ![ArduinoUNOSketch](https://github.com/evanjas77/evanjas77.github.io/blob/master/MotionSensorCamera/images/ArduinoSketch.jpg)
